@@ -27,6 +27,27 @@ class CategoryController extends Controller
         $category->category_name = $request->category_name;
         $category->user_id = Auth::user()->id;
         $category->save();
+        return redirect('/admin/category');
+    }
+    public function delete($id){
+        $category = Category::find($id);
+        $category->delete();
         return redirect()->back();
+    }
+    public function editForm($id){
+        $category = Category::find($id);
+        return view('/admin/category/edit',['category'=>$category]);
+    }
+    public function edit($id,Request $request){
+        $this->validate($request,['category_name'=>'required','unique:categories.category_name'],
+            ['category_name.required'=>'Nhap ten',
+                'category_name.unique'=>'tentrung'
+            ]);
+        $category = Category::find($id);
+        $category->category_name = $request->category_name;
+        $category->user_id = Auth::user()->id;
+
+        $category->save();
+        return redirect('/admin/category');
     }
 }

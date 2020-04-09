@@ -8,6 +8,12 @@
                 <p>{{$post->title}}</p>
                 <p>{{$post->category->category_name}}</p>
                 <p>{{$post->content}}</p>
+                @if(Auth::user()->id === $post->user_id || Auth::user()->role === 1)
+                    <a href="/delete-post/{{$post->id}}">Delete</a>
+                @endif
+                @if(Auth::user()->id === $post->user_id)
+                    <a href="/edit-post/{{$post->id}}">Edit</a>
+                @endif
             </div>
 
     </div>
@@ -17,6 +23,9 @@
         @foreach($comment as $item)
             <p>{{$item->user->name}}</p>
             <p>{{$item->content}}</p>
+            @if(Auth::user()->id=== $item->user_id || Auth::user()->role === 1)
+                <a href="/delete-comment/{{$item->id}}">Delete</a>
+            @endif
             @endforeach
 
     </div>

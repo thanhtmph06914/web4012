@@ -32,7 +32,8 @@ class PostController extends Controller
     }
     public function editForm($id){
         $post = Post::find($id);
-        return view('user/post/edit',['post'=>$post]);
+        $category = Category::all();
+        return view('user/edit',['post'=>$post],['category'=>$post]);
     }
     public function edit(Request $request){
         $post = new Post;
@@ -47,5 +48,10 @@ class PostController extends Controller
         $comment = Comment::where('post_id','=',$id)->where('is_active','=',1)->get();
         $post = Post::find($id);
         return view('user/postDetail',['post'=>$post],['comment'=>$comment]);
+    }
+    public function delete($id){
+        $post = Post::find($id);
+        $post->delete();
+        return redirect()->back();
     }
 }

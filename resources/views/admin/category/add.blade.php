@@ -9,7 +9,7 @@
             </ul>
         </div>
     @endif
-    <form action="admin/category/add" method="post">
+    <form action="/admin/category/add" method="post">
         @csrf
         <input type="text" name="category_name">
         <input type="submit" value="Sub">
