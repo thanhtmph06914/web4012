@@ -51,8 +51,8 @@
                         @endif
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
+                            <a href="http://127.0.0.1:8000/admin/category" style="padding: 0.25rem 1.5rem;" v-pre>
+                                {{ Auth::user()->name }}
                             </a>
 
 

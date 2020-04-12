@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61bae35f-f560-4b2a-a7a0-7c13a5c08a61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/user/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/user/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/user/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/user/CommentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/user/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/user/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/comments/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/comments/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/post/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/client.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/postDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/postDetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +190,10 @@
       <workItem from="1586183333812" duration="838000" />
       <workItem from="1586272576332" duration="734000" />
       <workItem from="1586331048385" duration="2982000" />
-      <workItem from="1586415398390" duration="4949000" />
+      <workItem from="1586415398390" duration="5242000" />
+      <workItem from="1586426614612" duration="169000" />
+      <workItem from="1586500991776" duration="6185000" />
+      <workItem from="1586592046103" duration="681000" />
     </task>
     <servers />
   </component>
@@ -253,18 +254,18 @@
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="718" y="164" key="RollbackChangesDialog/0.23.1920.977@0.23.1920.977" timestamp="1586417780845" />
-    <state x="558" y="216" width="803" height="590" key="find.popup" timestamp="1586273096298">
+    <state x="558" y="216" width="803" height="590" key="find.popup" timestamp="1586593020515">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="558" y="216" width="803" height="590" key="find.popup/0.23.1920.977@0.23.1920.977" timestamp="1586273096298" />
+    <state x="558" y="216" width="803" height="590" key="find.popup/0.23.1920.977@0.23.1920.977" timestamp="1586593020515" />
     <state x="541" y="232" key="run.anything.popup" timestamp="1586419845291">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="541" y="232" key="run.anything.popup/0.23.1920.977@0.23.1920.977" timestamp="1586419845291" />
-    <state x="541" y="66" width="838" height="934" key="search.everywhere.popup" timestamp="1586420318734">
+    <state x="541" y="66" width="838" height="934" key="search.everywhere.popup" timestamp="1586592666490">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="541" y="48" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583660913283" />
-    <state x="541" y="66" width="838" height="934" key="search.everywhere.popup/0.23.1920.977@0.23.1920.977" timestamp="1586420318734" />
+    <state x="541" y="66" width="838" height="934" key="search.everywhere.popup/0.23.1920.977@0.23.1920.977" timestamp="1586592666490" />
   </component>
 </project>

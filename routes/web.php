@@ -25,7 +25,7 @@ Route::group(['middleware'=>'ClearCacheMiddleware'],function(){
         Route::get('delete-post/{id}','user\PostController@delete');
             Route::get('delete-comemnt/{id}','user\CommentController@delete');
             Route::get('edit-post/{id}','user\PostController@editForm');
-            Route::post('edit','user\PostController@edit');
+            Route::post('edit/{id}','user\PostController@edit');
     });
     Route::group(['prefix'=>'admin','middleware'=>'IsAdminMiddleware'],function(){
         Route::get('list','admin\PostController@index');

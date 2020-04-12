@@ -35,14 +35,14 @@ class PostController extends Controller
         $category = Category::all();
         return view('user/edit',['post'=>$post],['category'=>$post]);
     }
-    public function edit(Request $request){
-        $post = new Post;
+    public function edit($id,Request $request){
+        $post = Post::find($id);
         $post->title = $request->title;
         $post->content = $request->noidung;
         $post->category_id = $request->category_id;
         $post->user_id = Auth::user()->id;
         $post->save();
-        return redirect()->back();
+        return redirect('/');
     }
     public function post($id){
         $comment = Comment::where('post_id','=',$id)->where('is_active','=',1)->get();

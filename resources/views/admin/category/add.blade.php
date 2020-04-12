@@ -9,9 +9,14 @@
             </ul>
         </div>
     @endif
-    <form action="/admin/category/add" method="post">
+    <form class="form-inline" action="/admin/category/add" method="post">
         @csrf
-        <input type="text" name="category_name">
-        <input type="submit" value="Sub">
+        <div class="form-group mb-2">
+            <input type="text" readonly class="form-control-plaintext" value="Category name">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" name="category_name">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Add category</button>
     </form>
-    @endsection
+@endsection

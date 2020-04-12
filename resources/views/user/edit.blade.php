@@ -1,7 +1,7 @@
 @extends('welcome')
 @section('content')
     <div class="thembaiviet">
-        <form action="/edit" method="POST">
+        <form action="/edit/{{$post->id}}" method="POST">
             @csrf
             <lable>Title</lable>
             <input type="text" name="title" value="{{$post->title}}">
